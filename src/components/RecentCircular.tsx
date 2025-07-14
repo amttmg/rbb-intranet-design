@@ -3,7 +3,18 @@ import Link from 'next/link';
 import { FiFileText, FiCalendar, FiChevronRight, FiLogOut } from 'react-icons/fi';
 
 export default function CompactCirculars() {
-    const circulars = [
+    type Urgency = 'high' | 'medium' | 'low';
+
+    interface Circular {
+        id: number;
+        title: string;
+        date: string;
+        category: string;
+        pdfUrl: string;
+        urgency: Urgency;
+    }
+
+    const circulars: Circular[] = [
         {
             id: 1,
             title: 'Annual Budget Allocation 2023',
@@ -38,7 +49,7 @@ export default function CompactCirculars() {
         }
     ];
 
-    const urgencyColors = {
+    const urgencyColors: Record<Urgency, string> = {
         high: 'bg-red-100 text-red-800',
         medium: 'bg-amber-100 text-amber-800',
         low: 'bg-emerald-100 text-emerald-800'
