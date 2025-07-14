@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { FiHome, FiCompass, FiBookmark, FiSettings, FiUser, FiMessageSquare, FiCalendar, FiPenTool, FiBarChart, FiAlertCircle, FiAlertOctagon, FiAlertTriangle, FiPhone, FiPhoneCall, FiPhoneOff, FiCloudRain, FiPhoneForwarded, FiPieChart, FiDownload, FiFastForward, FiFileMinus, FiFolder, FiBarChart2 } from "react-icons/fi";
-import { AiFillCalculator } from "react-icons/ai";
-import { BiCalculator, BiNotification } from "react-icons/bi";
 import Sidebar from "./sidebar";
 import LargeFooter from "./footer";
 const geistSans = Geist({

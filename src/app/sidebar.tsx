@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { FiHome, FiCompass, FiBookmark, FiSettings, FiUser, FiMessageSquare, FiCalendar, FiPenTool, FiBarChart, FiAlertCircle, FiAlertOctagon, FiAlertTriangle, FiPhone, FiPhoneCall, FiPhoneOff, FiCloudRain, FiPhoneForwarded, FiPieChart, FiDownload, FiFastForward, FiFileMinus, FiFolder, FiBarChart2, FiGitBranch } from "react-icons/fi";
+import { FiHome, FiPhone, FiPieChart, FiDownload, FiFolder, FiBarChart2 } from "react-icons/fi";
 import { BiCalculator, BiNotification } from "react-icons/bi";
-import { AiFillCalculator } from "react-icons/ai";
-import { Figtree } from "next/font/google";
 import { BsFillBuildingFill } from "react-icons/bs";
 
 

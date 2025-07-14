@@ -1,6 +1,6 @@
 // components/CompactCirculars.js
 import Link from 'next/link';
-import { FiFileText, FiDownload, FiCalendar, FiChevronRight, FiRewind, FiLogOut } from 'react-icons/fi';
+import { FiFileText, FiCalendar, FiChevronRight, FiLogOut } from 'react-icons/fi';
 
 export default function CompactCirculars() {
     const circulars = [
