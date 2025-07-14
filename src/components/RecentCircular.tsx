@@ -38,11 +38,6 @@ export default function CompactCirculars() {
         }
     ];
 
-    const urgencyColors = {
-        high: 'bg-red-100 text-red-800',
-        medium: 'bg-amber-100 text-amber-800',
-        low: 'bg-emerald-100 text-emerald-800'
-    };
 
     return (
         <div className='bg-gray-50 dark:bg-gray-800'>
@@ -70,7 +65,7 @@ export default function CompactCirculars() {
                             <div className="bg-white rounded-lg shadow-xs border border-gray-100 p-4 hover:shadow-sm hover:border-blue-200 transition-all">
                                 <div className="flex items-start justify-between">
                                     <div className="flex items-start space-x-3">
-                                        <div className={`p-2 rounded-lg ${urgencyColors[circular.urgency]} mt-1`}>
+                                        <div className={`p-2 rounded-lg mt-1`}>
                                             <FiFileText className="w-4 h-4" />
                                         </div>
                                         <div>
@@ -78,7 +73,7 @@ export default function CompactCirculars() {
                                                 <h3 className="text-base font-medium text-gray-800 group-hover:text-blue-600">
                                                     {circular.title}
                                                 </h3>
-                                                <span className={`px-2 py-0.5 rounded-full text-xs ${urgencyColors[circular.urgency]}`}>
+                                                <span className={`px-2 py-0.5 rounded-full text-xs `}>
                                                     {circular.urgency === 'high' ? 'New' : circular.urgency === 'medium' ? 'New' : 'Notice'}
                                                 </span>
                                             </div>
