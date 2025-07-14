@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiHome, FiPhone, FiPieChart, FiDownload, FiFolder, FiBarChart2 } from "react-icons/fi";
+import { FiHome, FiPhone, FiPieChart, FiDownload, FiFolder, FiBarChart2, FiUser, FiShield, FiFileText, FiCalendar, FiGlobe, FiDatabase, FiServer, FiUserPlus, FiPackage, FiSettings, FiHelpCircle } from "react-icons/fi";
 import { BiCalculator, BiNotification } from "react-icons/bi";
 import { BsFillBuildingFill } from "react-icons/bs";
 
@@ -90,54 +90,72 @@ export default function Sidebar() {
                     </button>
                 </form>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 border border-gray-200 dark:border-gray-700 mb-4">
-                <div className="space-y-1">
-                    <h3 className="px-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                        Internal Applications
-                    </h3>
-                    <Link href="/community/react" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        React Developers
+            <div className="w-64 bg-white dark:bg-gray-800 border rounded-xl border-gray-200 dark:border-gray-700 flex flex-col">
+
+                {/* Scrollable Content */}
+                <div className="flex-1 overflow-y-auto p-4 space-y-6">
+                    {/* Internal Applications Section */}
+                    <div className="space-y-1">
+                        <h3 className="mb-4 px-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            Internal Applications
+                        </h3>
+                        {[
+                            { name: "File Mgmt (Treasury)", icon: <FiFolder className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "HR Resolution", icon: <FiUser className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "Bank Guarantee Info", icon: <FiShield className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "Note Kosh Mgmt", icon: <FiFileText className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "RBB Calendar", icon: <FiCalendar className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "What is my IP?", icon: <FiGlobe className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> }
+                        ].map((app, index) => (
+                            <Link
+                                href="#"
+                                key={index}
+                                className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group"
+                            >
+                                {app.icon}
+                                <span>{app.name}</span>
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Divider */}
+                    <div className="border-t border-gray-200 dark:border-gray-700 my-3"></div>
+
+                    {/* Third Party Applications Section */}
+                    <div className="space-y-1">
+                        <h3 className="mb-4 px-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            Third Party Applications
+                        </h3>
+                        {[
+                            { name: "New RMIS", icon: <FiDatabase className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "RMIS V2", icon: <FiServer className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "Pension Mgmt (Gov)", icon: <FiUserPlus className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "Sutra", icon: <FiPackage className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> },
+                            { name: "NRB NCTSS", icon: <FiBarChart2 className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" /> }
+                        ].map((app, index) => (
+                            <Link
+                                href="#"
+                                key={index}
+                                className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group"
+                            >
+                                {app.icon}
+                                <span>{app.name}</span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Footer with quick links */}
+                <div className="p-4 border-t border-gray-200 dark:border-gray-700 space-y-1">
+                    <Link href="#" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
+                        <FiSettings className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />
+                        <span>Settings</span>
                     </Link>
-                    <Link href="/community/design" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Design Systems
-                    </Link>
-                    <Link href="/community/nextjs" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Next.js Enthusiasts
-                    </Link>
-                    <Link href="/community/react" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        React Developers
-                    </Link>
-                    <Link href="/community/design" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Design Systems
-                    </Link>
-                    <Link href="/community/nextjs" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Next.js Enthusiasts
+                    <Link href="#" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
+                        <FiHelpCircle className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />
+                        <span>Help & Support</span>
                     </Link>
                 </div>
-                <div className="border-t border-gray-200 dark:border-gray-700 my-3"></div>
-
-                <div className="space-y-1">
-                    <h3 className="px-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                        External Applications
-                    </h3>
-                    <Link href="/community/react" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        React Developers
-                    </Link>
-                    <Link href="/community/design" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Design Systems
-                    </Link>
-                    <Link href="/community/nextjs" className="block px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 rounded-lg transition-colors">
-                        Next.js Enthusiasts
-                    </Link>
-                </div>
-            </div>
-
-            {/* Optional: Additional card below sidebar */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 border border-gray-200 dark:border-gray-700 mt-4">
-                <h3 className="font-medium text-gray-900 dark:text-white mb-2">Recent Activity</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                    You have 3 new notifications
-                </p>
             </div>
         </div >
     )
