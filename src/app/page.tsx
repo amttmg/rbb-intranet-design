@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 import building from './images/rbb.jpg';
+import RecentCirculars from '@/components/RecentCircular';
 
 export default function Home() {
   return (
@@ -149,9 +150,13 @@ export default function Home() {
         </Swiper>
       </section>
 
+
       {/* Rest of your content */}
-      <section className="container mx-auto py-4 px-4">
+      <section className="relative">
+        <RecentCirculars></RecentCirculars>
+
         <QuickLinks></QuickLinks>
+
       </section>
 
       {/* Global Styles */}

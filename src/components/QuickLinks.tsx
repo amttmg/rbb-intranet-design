@@ -1,56 +1,120 @@
-// components/QuickAccessLinks.js
+// components/GroupedQuickAccess.js
 import Link from 'next/link';
 import {
     FiFileText, FiDatabase, FiLayers, FiBarChart2,
     FiUsers, FiSettings, FiCalendar, FiDownload,
-    FiArrowRight
+    FiArrowRight, FiExternalLink, FiGrid, FiLock,
+    FiHelpCircle, FiBriefcase
 } from 'react-icons/fi';
 
-export default function QuickAccessLinks() {
-    const links = [
-        { name: 'Documents', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
-        { name: 'Data', href: '/data', icon: <FiDatabase />, color: 'bg-purple-100 text-purple-600' },
-        { name: 'Templates', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
-        { name: 'Analytics', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
-        { name: 'Team', href: '/team', icon: <FiUsers />, color: 'bg-rose-100 text-rose-600' },
-        { name: 'Settings', href: '/settings', icon: <FiSettings />, color: 'bg-gray-100 text-gray-600' },
-        { name: 'Events', href: '/events', icon: <FiCalendar />, color: 'bg-indigo-100 text-indigo-600' },
-        { name: 'Resources', href: '/resources', icon: <FiDownload />, color: 'bg-teal-100 text-teal-600' },
+export default function GroupedQuickAccess() {
+    const linkGroups = [
+        {
+            title: 'Internal Apps',
+            description: 'Essential work tools',
+            icon: <FiGrid className="text-blue-500" />,
+            links: [
+                { name: 'Documents', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
+                { name: 'Data Portal', href: '/data', icon: <FiDatabase />, color: 'bg-purple-100 text-purple-600' },
+                { name: 'Templates', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
+                { name: 'Analytics', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+            ]
+        },
+        {
+            title: 'External Links',
+            description: 'Partner sites',
+            icon: <FiExternalLink className="text-green-500" />,
+            links: [
+                { name: 'Client Portal', href: '/clients', icon: <FiUsers />, color: 'bg-rose-100 text-rose-600' },
+                { name: 'Resources', href: '/resources', icon: <FiDownload />, color: 'bg-teal-100 text-teal-600' },
+                { name: 'Help Center', href: '/help', icon: <FiHelpCircle />, color: 'bg-indigo-100 text-indigo-600' },
+            ]
+        },
+        {
+            title: 'Third Party',
+            description: 'Integrated services',
+            icon: <FiLock className="text-orange-500" />,
+            links: [
+                { name: 'CRM', href: '/crm', icon: <FiBriefcase />, color: 'bg-red-100 text-red-600' },
+                { name: 'Calendar', href: '/calendar', icon: <FiCalendar />, color: 'bg-yellow-100 text-yellow-600' },
+                { name: 'Settings', href: '/settings', icon: <FiSettings />, color: 'bg-gray-100 text-gray-600' },
+            ]
+        },
+        {
+            title: 'Internal Apps',
+            description: 'Essential work tools',
+            icon: <FiGrid className="text-blue-500" />,
+            links: [
+                { name: 'Documents', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
+                { name: 'Data Portal', href: '/data', icon: <FiDatabase />, color: 'bg-purple-100 text-purple-600' },
+                { name: 'Templates', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
+                { name: 'Analytics', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+            ]
+        },
+        {
+            title: 'External Links',
+            description: 'Partner sites',
+            icon: <FiExternalLink className="text-green-500" />,
+            links: [
+                { name: 'Client Portal', href: '/clients', icon: <FiUsers />, color: 'bg-rose-100 text-rose-600' },
+                { name: 'Resources', href: '/resources', icon: <FiDownload />, color: 'bg-teal-100 text-teal-600' },
+                { name: 'Help Center', href: '/help', icon: <FiHelpCircle />, color: 'bg-indigo-100 text-indigo-600' },
+            ]
+        },
+        {
+            title: 'Third Party',
+            description: 'Integrated services',
+            icon: <FiLock className="text-orange-500" />,
+            links: [
+                { name: 'CRM', href: '/crm', icon: <FiBriefcase />, color: 'bg-red-100 text-red-600' },
+                { name: 'Calendar', href: '/calendar', icon: <FiCalendar />, color: 'bg-yellow-100 text-yellow-600' },
+                { name: 'Settings', href: '/settings', icon: <FiSettings />, color: 'bg-gray-100 text-gray-600' },
+            ]
+        }
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-4 py-12">
-            {/* Enhanced Heading */}
-            <div className="text-center mb-12 relative">
-                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl relative inline-block">
-                    <span className="relative z-10">
-                        Quick Access
-                        <span className="absolute bottom-0 left-0 w-full h-2 bg-blue-100 opacity-60 -z-10 transform -skew-y-1"></span>
-                    </span>
+        <div className="max-w-6xl mx-auto px-4 py-8">
+            {/* Main Heading */}
+            <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+                    Quick Access
                 </h2>
-                <p className="mt-4 max-w-lg mx-auto text-lg text-gray-600 font-light">
-                    Shortcuts to your most important destinations
-                    <span className="block mt-2 text-blue-500">✦ ✦ ✦</span>
+                <p className="mt-2 max-w-lg mx-auto text-gray-600">
+                    Organized shortcuts to all your destinations
                 </p>
             </div>
 
-            {/* Compact Links Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                {links.map((link, index) => (
-                    <Link
-                        key={index}
-                        href={link.href}
-                        className="group relative bg-white p-4 rounded-lg shadow-xs border border-gray-100 hover:border-blue-200 hover:shadow-sm transition-all duration-200 flex flex-col items-center text-center"
-                    >
-                        <div className={`mb-3 p-3 rounded-full ${link.color} transition-all duration-300 group-hover:scale-110`}>
-                            {link.icon}
+            {/* Grouped Links */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {linkGroups.map((group, groupIndex) => (
+                    <div key={groupIndex} className="bg-white rounded-lg shadow-xs border border-gray-100 p-5 hover:shadow-sm transition-shadow">
+                        <div className="flex items-center mb-3">
+                            <div className="p-2 rounded-md mr-3">
+                                {group.icon}
+                            </div>
+                            <div>
+                                <h3 className="font-medium text-gray-900">{group.title}</h3>
+                                <p className="text-xs text-gray-500">{group.description}</p>
+                            </div>
                         </div>
-                        <h3 className="text-sm font-medium text-gray-800 mb-1">{link.name}</h3>
-                        <div className="flex items-center text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <span>Access</span>
-                            <FiArrowRight className="ml-1" size={12} />
+
+                        <div className="space-y-2">
+                            {group.links.map((link, linkIndex) => (
+                                <Link
+                                    key={linkIndex}
+                                    href={link.href}
+                                    className="group flex items-center p-2 rounded-md hover:bg-gray-50 transition-colors duration-150"
+                                >
+                                    <div className={`p-2 rounded-full ${link.color} mr-2 group-hover:scale-105 transition-transform`}>
+                                        {link.icon}
+                                    </div>
+                                    <span className="text-sm text-gray-700 flex-grow">{link.name}</span>
+                                    <FiArrowRight className="text-gray-300 group-hover:text-blue-500 transition-colors text-sm" />
+                                </Link>
+                            ))}
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </div>
         </div>
