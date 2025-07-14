@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+import QuickLinks from '../components/QuickLinks';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
@@ -149,10 +150,8 @@ export default function Home() {
       </section>
 
       {/* Rest of your content */}
-      <section className="container mx-auto py-16 px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Our Banking Solutions
-        </h1>
+      <section className="container mx-auto py-4 px-4">
+        <QuickLinks></QuickLinks>
       </section>
 
       {/* Global Styles */}

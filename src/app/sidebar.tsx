@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { FiHome, FiCompass, FiBookmark, FiSettings, FiUser, FiMessageSquare, FiCalendar, FiPenTool, FiBarChart, FiAlertCircle, FiAlertOctagon, FiAlertTriangle, FiPhone, FiPhoneCall, FiPhoneOff, FiCloudRain, FiPhoneForwarded, FiPieChart, FiDownload, FiFastForward, FiFileMinus, FiFolder, FiBarChart2 } from "react-icons/fi";
+import { FiHome, FiCompass, FiBookmark, FiSettings, FiUser, FiMessageSquare, FiCalendar, FiPenTool, FiBarChart, FiAlertCircle, FiAlertOctagon, FiAlertTriangle, FiPhone, FiPhoneCall, FiPhoneOff, FiCloudRain, FiPhoneForwarded, FiPieChart, FiDownload, FiFastForward, FiFileMinus, FiFolder, FiBarChart2, FiGitBranch } from "react-icons/fi";
 import { BiCalculator, BiNotification } from "react-icons/bi";
 import { AiFillCalculator } from "react-icons/ai";
+import { Figtree } from "next/font/google";
+import { BsFillBuildingFill } from "react-icons/bs";
 
 
 export default function Sidebar() {
@@ -17,6 +19,14 @@ export default function Sidebar() {
                     <Link href="/explore" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
                         <FiPhone className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />
                         <span>Internal Phone No</span>
+                    </Link>
+                    <Link href="/explore" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
+                        <FiHome className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />
+                        <span>Branches</span>
+                    </Link>
+                    <Link href="/explore" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
+                        <BsFillBuildingFill className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />
+                        <span>Departments</span>
                     </Link>
                     <Link href="/messages" className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors group">
                         <FiPieChart className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" />

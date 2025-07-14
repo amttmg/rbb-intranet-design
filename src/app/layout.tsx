@@ -6,6 +6,7 @@ import { FiHome, FiCompass, FiBookmark, FiSettings, FiUser, FiMessageSquare, FiC
 import { AiFillCalculator } from "react-icons/ai";
 import { BiCalculator, BiNotification } from "react-icons/bi";
 import Sidebar from "./sidebar";
+import LargeFooter from "./footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -68,10 +69,10 @@ export default function RootLayout({
                 <div className="ml-4 flex items-center md:ml-6">
                   <div className="ml-10 flex items-center space-x-4">
                     <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Home</Link>
-                    <Link href="/products" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Circular</Link>
-                    <Link href="/services" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Policies</Link>
-                    <Link href="/services" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Trainign & FAQs</Link>
-                    <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Union Notices</Link>
+                    <Link href="/circulars" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Circular</Link>
+                    <Link href="/policies" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Policies</Link>
+                    <Link href="/training-faq" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Trainign & FAQs</Link>
+                    <Link href="/union-notices" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium">Union Notices</Link>
                   </div>
 
                   {/* Sign In Button */}
@@ -158,8 +159,10 @@ export default function RootLayout({
             <main className="flex-1 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 max-w-full overflow-hidden">
               {children}
             </main>
+
           </div>
         </div>
+        <LargeFooter></LargeFooter>
       </body>
     </html>
   );
