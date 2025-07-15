@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Navbar Component */}
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-md">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-md fixed top-0 left-0 w-full z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-3">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
@@ -146,7 +146,7 @@ export default function RootLayout({
 
         {/* Main Content with Sidebar */}
         {/* Main Content with Sidebar */}
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 mt-16">
           <div className="flex flex-col md:flex-row gap-6">
 
             {/* Sidebar Component */}
