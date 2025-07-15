@@ -44,7 +44,7 @@ export default function Home() {
                 src={building}
                 alt="RBB Bank"
                 fill
-                className="object-cover"
+                className="object-cover blur-xs"
                 priority
                 quality={100}
               />
@@ -58,15 +58,13 @@ export default function Home() {
                           textShadow: `6px 6px 0px rgba(0,0,0,0.2)`
                         }}
                       >
-                        WELCOME TO<br /> <span className='text-4xl text-white-400'>RBB <span className='text-white-800'>INTRANET</span></span>
+                        <span className='tracking-[.25em]'>WELCOME</span>
+
+
+                        <br /> <span className='text-4xl text-white-400 tracking-wide'>RBB <span className='text-red-100'>INTRANET</span></span>
                       </span>
                     </h1>
-                    <div
-                      className="w-32 h-1.5 bg-gradient-to-r from-blue-300 to-red-300 mx-auto rounded-full mb-6"
-                      style={{
-                        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.5)'
-                      }}
-                    ></div>
+
                   </div>
 
                   <p
@@ -82,7 +80,11 @@ export default function Home() {
                   </p>
 
                   <div className="opacity-0 animate-fadeInUp delay-200">
-
+                    <button
+                      className="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
+                    >
+                      Learn More
+                    </button>
                   </div>
                 </div>
               </div>
@@ -96,7 +98,7 @@ export default function Home() {
                 src={building}
                 alt="RBB Bank"
                 fill
-                className="object-cover"
+                className="object-cover blur-xs"
                 priority
                 quality={100}
               />
@@ -110,15 +112,13 @@ export default function Home() {
                           textShadow: `6px 6px 0px rgba(0,0,0,0.2)`
                         }}
                       >
-                        WELCOME TO<br /> <span className='text-4xl text-white-400'>RBB <span className='text-white-800'>INTRANET</span></span>
+                        <span className='tracking-[.25em]'>WELCOME</span>
+
+
+                        <br /> <span className='text-4xl text-white-400 tracking-wide'>RBB <span className='text-red-100'>INTRANET</span></span>
                       </span>
                     </h1>
-                    <div
-                      className="w-32 h-1.5 bg-gradient-to-r from-blue-300 to-red-300 mx-auto rounded-full mb-6"
-                      style={{
-                        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.5)'
-                      }}
-                    ></div>
+
                   </div>
 
                   <p
@@ -134,7 +134,11 @@ export default function Home() {
                   </p>
 
                   <div className="opacity-0 animate-fadeInUp delay-200">
-
+                    <button
+                      className="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
+                    >
+                      Learn More
+                    </button>
                   </div>
                 </div>
               </div>

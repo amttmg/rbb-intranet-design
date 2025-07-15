@@ -11,7 +11,7 @@ export default function LargeFooter() {
                     <div>
                         <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">About Us</h3>
                         <p className="mb-6 text-gray-600 leading-relaxed">
-                            We provide innovative solutions to help your business grow in the digital era.
+                            Rastriya Banijya Bank Limited (RBBL) has a history of serving its customers far and wide across the nation for more than half a century. The bank then fully owned by Government of Nepal, was established on 10 Magh 2022 (23 January 1966)"
                         </p>
                         <div className="flex space-x-5">
                             <a href="#" className="text-gray-500 hover:text-indigo-600 transition-colors">
@@ -55,13 +55,13 @@ export default function LargeFooter() {
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                About
+                                Circulara
                             </Link></li>
                             <li><Link href="/services" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Services
+                                Policies
                             </Link></li>
                             <li><Link href="/blog" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -73,44 +73,50 @@ export default function LargeFooter() {
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Contact
+                                Training & FAQ
+                            </Link></li>
+                            <li><Link href="/contact" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
+                                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                                Union Notices
                             </Link></li>
                         </ul>
                     </div>
 
                     {/* Column 3 - Services */}
                     <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">Services</h3>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">External Links</h3>
                         <ul className="space-y-3">
                             <li><Link href="/services/web-development" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Web Development
+                                RBB Website
                             </Link></li>
                             <li><Link href="/services/mobile-apps" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Mobile Apps
+                                Nepal Rastra Bank
                             </Link></li>
                             <li><Link href="/services/seo" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                SEO Optimization
+                                Rastriya Banijya Bank Merchant Ltd.
                             </Link></li>
                             <li><Link href="/services/ui-ux" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                UI/UX Design
+                                Nepal Clearing House Ltd.
                             </Link></li>
                             <li><Link href="/services/digital-marketing" className="text-gray-600 hover:text-indigo-600 transition-colors flex items-center">
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Digital Marketing
+                                Nepal Bankers' Association
                             </Link></li>
                         </ul>
                     </div>
@@ -120,23 +126,20 @@ export default function LargeFooter() {
                         <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">Contact Us</h3>
                         <address className="not-italic space-y-3">
                             <p className="flex items-center text-gray-600">
-                                <svg className="w-5 h-5 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                123 Business Ave, Suite 100<br />New York, NY 10001
+
+                                Central Office Singhadurbar Plaza, Kathmandu
                             </p>
                             <p className="flex items-center text-gray-600">
-                                <svg className="w-5 h-5 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                (123) 456-7890
+
+                                Phone:+977-1-572-1220,
+                                Fax:+977-1-425-2931
+                                Email: rbb.info@rbb.com.np
+                                Post-Box No.:8368,
                             </p>
                             <p className="flex items-center text-gray-600">
-                                <svg className="w-5 h-5 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                info@example.com
+
+                                SWIFT Code: RBBANPKA
+                                Email: swift@rbb.com.np
                             </p>
                         </address>
                     </div>
@@ -144,7 +147,7 @@ export default function LargeFooter() {
 
                 {/* Bottom section */}
                 <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+                    <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Rastriya Banijya Bank Limited. All rights reserved. || Design and developed by Research and Development Unit, IT Department</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="/privacy-policy" className="text-gray-500 hover:text-indigo-600 transition-colors text-sm">Privacy Policy</Link>
                         <Link href="/terms-of-service" className="text-gray-500 hover:text-indigo-600 transition-colors text-sm">Terms of Service</Link>

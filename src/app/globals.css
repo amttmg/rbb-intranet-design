@@ -3,6 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --rbb-blue: #213A8F;
+  --rbb-red: #F30100;
+  --rbb-yellow: #E7CA14;
+}
+
+.text-rbb-blue {
+  color: var(--rbb-blue);
+}
+
+.text-rbb-red {
+  color: var(--rbb-red);
+}
+
+.text-rbb-yellow {
+  color: var(--rbb-yellow);
+}
+
+.bg-rbb-blue {
+  background-color: var(--rbb-blue);
+}
+
+.bg-rbb-red {
+  background-color: var(--rbb-red);
+}
+
+.bg-rbb-yellow {
+  background-color: var(--rbb-yellow);
 }
 
 @theme inline {
@@ -23,4 +50,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.blur-xs {
+  filter: blur(2px);
 }

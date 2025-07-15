@@ -97,7 +97,7 @@ export default function GroupedQuickAccess() {
             {/* Grouped Links */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {linkGroups.map((group, groupIndex) => (
-                    <div key={groupIndex} className="bg-gray-100 rounded-lg shadow-xs border border-gray-100 p-5 hover:shadow-sm transition-shadow">
+                    <div key={groupIndex} className=" rounded-lg shadow-xs border border-gray-100 p-5 hover:shadow-sm transition-shadow">
                         <div className="flex items-center mb-3">
                             <div className="p-2 rounded-md mr-3">
                                 {group.icon}
