@@ -11,7 +11,7 @@ export default function LargeFooter() {
                     <div>
                         <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-200">About Us</h3>
                         <p className="mb-6 text-gray-600 leading-relaxed">
-                            Rastriya Banijya Bank Limited (RBBL) has a history of serving its customers far and wide across the nation for more than half a century. The bank then fully owned by Government of Nepal, was established on 10 Magh 2022 (23 January 1966)"
+                            Rastriya Banijya Bank Limited (RBBL) has a history of serving its customers far and wide across the nation for more than half a century. The bank then fully owned by Government of Nepal, was established on 10 Magh 2022 (23 January 1966)
                         </p>
                         <div className="flex space-x-5">
                             <a href="#" className="text-gray-500 hover:text-indigo-600 transition-colors">
@@ -116,7 +116,7 @@ export default function LargeFooter() {
                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
-                                Nepal Bankers' Association
+                                Nepal Bankers Association
                             </Link></li>
                         </ul>
                     </div>

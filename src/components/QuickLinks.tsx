@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { FcIphone } from 'react-icons/fc';
 import {
-    FiFileText, FiDatabase, FiLayers, FiBarChart2,
+    FiFileText, FiLayers,
     FiUsers, FiSettings, FiCalendar, FiDownload,
     FiArrowRight, FiExternalLink, FiGrid, FiLock,
     FiHelpCircle, FiBriefcase,
