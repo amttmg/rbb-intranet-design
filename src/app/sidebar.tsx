@@ -95,7 +95,7 @@ export default function Sidebar() {
             <CheckMail></CheckMail>
 
             {/* Remaining Sections */}
-            <div className="w-64 bg-white dark:bg-gray-800 border rounded-xl border-gray-200 dark:border-gray-700 flex flex-col">
+            <div className="md:w-64 bg-white dark:bg-gray-800 border rounded-xl border-gray-200 dark:border-gray-700 flex flex-col">
                 <div className="flex-1 overflow-y-auto p-4 space-y-6">
                     {sidebarItems.slice(1, 10).map((section, index) => (
                         <div key={index} className="space-y-1">

@@ -1,6 +1,5 @@
 // components/GroupedQuickAccess.js
 import Link from 'next/link';
-import { AiFillMobile } from 'react-icons/ai';
 import { FcIphone } from 'react-icons/fc';
 import {
     FiFileText, FiDatabase, FiLayers, FiBarChart2,
