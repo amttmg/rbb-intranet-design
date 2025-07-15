@@ -1,54 +1,63 @@
 // components/GroupedQuickAccess.js
 import Link from 'next/link';
+import { AiFillMobile } from 'react-icons/ai';
+import { FcIphone } from 'react-icons/fc';
 import {
     FiFileText, FiDatabase, FiLayers, FiBarChart2,
     FiUsers, FiSettings, FiCalendar, FiDownload,
     FiArrowRight, FiExternalLink, FiGrid, FiLock,
-    FiHelpCircle, FiBriefcase
+    FiHelpCircle, FiBriefcase,
+    FiUserCheck,
+    FiCreditCard,
+    FiBookmark,
+    FiPieChart
 } from 'react-icons/fi';
+import { TbFileCertificate } from 'react-icons/tb';
 
 export default function GroupedQuickAccess() {
     const linkGroups = [
         {
-            title: 'Internal Apps',
-            description: 'Essential work tools',
-            icon: <FiGrid className="text-blue-500" />,
+            title: 'HR Department',
+            description: 'Related resources',
+            icon: <FiUsers className="text-blue-500" />,
             links: [
-                { name: 'Documents', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
-                { name: 'Data Portal', href: '/data', icon: <FiDatabase />, color: 'bg-purple-100 text-purple-600' },
-                { name: 'Templates', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
-                { name: 'Analytics', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+                { name: 'HRIS', href: '/analytics', icon: <FiUserCheck />, color: 'bg-amber-100 text-amber-600' },
+                { name: 'CMRS', href: '/data', icon: <FiCreditCard />, color: 'bg-purple-100 text-purple-600' },
+                { name: 'HR Resolution', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
+                { name: 'HR Notices', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
             ]
         },
         {
-            title: 'External Links',
-            description: 'Partner sites',
+            title: 'RBBML Links',
+            description: 'related resources',
             icon: <FiExternalLink className="text-green-500" />,
             links: [
-                { name: 'Client Portal', href: '/clients', icon: <FiUsers />, color: 'bg-rose-100 text-rose-600' },
-                { name: 'Resources', href: '/resources', icon: <FiDownload />, color: 'bg-teal-100 text-teal-600' },
-                { name: 'Help Center', href: '/help', icon: <FiHelpCircle />, color: 'bg-indigo-100 text-indigo-600' },
+                { name: 'DP System', href: '/clients', icon: <FiUsers />, color: 'bg-rose-100 text-rose-600' },
+                { name: 'Mero Share', href: '/resources', icon: <FiDownload />, color: 'bg-teal-100 text-teal-600' },
             ]
         },
         {
-            title: 'Third Party',
-            description: 'Integrated services',
+            title: 'Remittance Links',
+            description: 'Related resources',
             icon: <FiLock className="text-orange-500" />,
             links: [
-                { name: 'CRM', href: '/crm', icon: <FiBriefcase />, color: 'bg-red-100 text-red-600' },
-                { name: 'Calendar', href: '/calendar', icon: <FiCalendar />, color: 'bg-yellow-100 text-yellow-600' },
-                { name: 'Settings', href: '/settings', icon: <FiSettings />, color: 'bg-gray-100 text-gray-600' },
+                { name: 'RBB Remit', href: '/crm', icon: <FiBriefcase />, color: 'bg-red-100 text-red-600' },
+                { name: 'Remit Certificates', href: '/calendar', icon: <TbFileCertificate />, color: 'bg-yellow-100 text-yellow-600' },
             ]
         },
         {
-            title: 'Internal Apps',
+            title: 'Alternative Channels',
             description: 'Essential work tools',
             icon: <FiGrid className="text-blue-500" />,
             links: [
-                { name: 'Documents', href: '/docs', icon: <FiFileText />, color: 'bg-blue-100 text-blue-600' },
-                { name: 'Data Portal', href: '/data', icon: <FiDatabase />, color: 'bg-purple-100 text-purple-600' },
-                { name: 'Templates', href: '/templates', icon: <FiLayers />, color: 'bg-emerald-100 text-emerald-600' },
-                { name: 'Analytics', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+                { name: 'Mobile Banking', href: '/docs', icon: <FcIphone />, color: 'bg-blue-100 text-blue-600' },
+                { name: 'Internet Banking', href: '/data', icon: <FiBookmark />, color: 'bg-purple-100 text-purple-600' },
+                { name: 'Digital Banking Reporting', href: '/templates', icon: <FiPieChart />, color: 'bg-emerald-100 text-emerald-600' },
+                { name: 'Card Mgmt System', href: '/analytics', icon: <FiCreditCard />, color: 'bg-amber-100 text-amber-600' },
+                // { name: 'BLB Mgmt System', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+                // { name: 'QR Payment', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+                // { name: 'Connect IPS', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
+                // { name: 'USSD Banking', href: '/analytics', icon: <FiBarChart2 />, color: 'bg-amber-100 text-amber-600' },
             ]
         },
         {
@@ -88,7 +97,7 @@ export default function GroupedQuickAccess() {
             {/* Grouped Links */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {linkGroups.map((group, groupIndex) => (
-                    <div key={groupIndex} className="bg-white rounded-lg shadow-xs border border-gray-100 p-5 hover:shadow-sm transition-shadow">
+                    <div key={groupIndex} className="bg-gray-100 rounded-lg shadow-xs border border-gray-100 p-5 hover:shadow-sm transition-shadow">
                         <div className="flex items-center mb-3">
                             <div className="p-2 rounded-md mr-3">
                                 {group.icon}
@@ -98,7 +107,7 @@ export default function GroupedQuickAccess() {
                                 <p className="text-xs text-gray-500">{group.description}</p>
                             </div>
                         </div>
-
+                        <hr className="my-3 border-gray-200" />
                         <div className="space-y-2">
                             {group.links.map((link, linkIndex) => (
                                 <Link
