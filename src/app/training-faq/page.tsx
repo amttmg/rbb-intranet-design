@@ -268,7 +268,7 @@ export default function TrainingFAQPage() {
                         <div className="mb-4 md:mb-0">
                             <h3 className="text-lg font-medium text-indigo-800 dark:text-indigo-100">Need more help?</h3>
                             <p className="mt-1 text-sm text-indigo-600 dark:text-indigo-300">
-                                Can't find what you're looking for? Our support team is here to assist you.
+                                Can t find what you re looking for? Our support team is here to assist you.
                             </p>
                         </div>
                         <button className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
