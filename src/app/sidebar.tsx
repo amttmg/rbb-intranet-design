@@ -17,8 +17,8 @@ const sidebarItems = [
         section: "Main Links",
         items: [
             { name: "Compliance Notices", icon: BiNotification, href: "/" },
-            { name: "Internal Phone No", icon: FiPhone, href: "/explore" },
-            { name: "Branches", icon: FiHome, href: "/explore" },
+            { name: "Internal Phone No", icon: FiPhone, href: "/management" },
+            { name: "Branches", icon: FiHome, href: "/branches" },
             { name: "Departments", icon: BsFillBuildingFill, href: "/explore" },
             { name: "Interest Rates", icon: FiPieChart, href: "/messages" },
             { name: "Downloads", icon: FiDownload, href: "/messages" },
